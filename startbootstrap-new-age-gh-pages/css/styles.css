@@ -11609,3 +11609,26 @@ footer a:hover, footer a:active, footer a:focus {
     max-width: 17rem;
   }
 }
+.user-type {
+  width: 100%;
+  max-height: 600px;
+  border-radius: 50px;
+  object-fit: cover;
+  transition-duration: 0.5s;
+  opacity: 1;
+  border: none;
+}
+.user-type:hover {
+  opacity: 0.75;
+  border: 5px solid --bs-blue;
+  transform: scale(1.5);
+}
+.button-title {
+  font-size: xxx-large;
+  text-align: center;
+}
+.image-container {
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+}
