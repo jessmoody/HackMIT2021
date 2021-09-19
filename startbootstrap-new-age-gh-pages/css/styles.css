@@ -11632,3 +11632,56 @@ footer a:hover, footer a:active, footer a:focus {
   overflow: hidden;
   width: 100%;
 }
+#advanced-button {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.advanced-feature {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  text-align:center;
+  flex-basis: 100%;
+  max-width: 25vh;
+}
+#advanced-options {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px;
+}
+#advanced-options:before {
+  content: "";
+}
+#advanced-options:after {
+  content: "";
+}
+.advanced-type {
+  color: black;
+  width: 100%;
+  padding: 20px;
+}
+.advanced-type-choices {
+  display: flex;
+  flex-direction: column;
+}
+.advanced-button {
+  margin: 10px;
+  border-radius: 10px;
+}
+.button-on {
+  border: 3px solid var(--bs-green);
+  color: var(--bs-green);
+  border-radius: 25px;
+}
+.button-off {
+  border: 3px solid var(--bs-red);
+  color: var(--bs-red);
+  transition-duration: 0.5s;
+}
+.button-off:hover {
+  border: 3px solid var(--bs-green);
+  color: var(--bs-green);
+  border-radius: 25px;
+}
