@@ -32,3 +32,29 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+function selectButton(buttonID) {
+    let button = document.getElementById(buttonID);
+    if (button.classList.contains("button-off")) {
+        button.classList.remove("button-off");
+        button.classList.add("button-on");
+    } else if (button.classList.contains("button-on")) {
+        button.classList.remove("button-on");
+        button.classList.add("button-off");
+    }
+}
+
+function toggleVisibility(buttonID) {
+    let advanced = document.querySelector("#advanced-options");
+    let button = document.getElementById(buttonID);
+    console.log(advanced);
+    console.log("Display before toggling: ", getComputedStyle(advanced).display);
+    if (getComputedStyle(advanced).display == "none") {
+        advanced.style.display = "flex";
+        button.innerText = "Hide Advanced Options"
+    } else if (getComputedStyle(advanced).display != "none") {
+        advanced.style.display = "none";
+        button.innerText = "Show Advanced Options"
+    }
+    console.log("Visibility after toggling: ", advanced.style.visibility);
+}
